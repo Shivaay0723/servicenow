@@ -1,0 +1,10 @@
+//caller name will populate
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if(g_form.isNewRecord()) {
+  var uSYSID = g_user.userID;
+  var uValue = g_user.getFullName();
+  
+ g_form.setValue('caller_id',uSYSID,uValue);
+   }
+}
